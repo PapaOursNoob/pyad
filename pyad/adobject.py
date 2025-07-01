@@ -452,7 +452,7 @@ class ADObject(ADBase):
         self.__ads_path = pyadutils.generate_ads_path(new_dn, self.default_ldap_protocol,
                 self.default_ldap_server, self.default_ldap_port)
         self.__set_adsi_obj()
-        self.__distinguishedName = self.get_attribute('distinguishedName', False)
+        self.__distinguished_name = self.get_attribute('distinguishedName', False)
         self.__set_gc_adsi_obj()
 
     def add_to_group(self, group):
